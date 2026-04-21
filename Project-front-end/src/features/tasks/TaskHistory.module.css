@@ -1,0 +1,74 @@
+.wrap { position: relative; }
+
+.line {
+  position: absolute;
+  left: 11px;
+  top: 12px; bottom: 12px;
+  width: 1px;
+  background: var(--border);
+}
+
+.list { display: flex; flex-direction: column; gap: 10px; }
+
+.item { display: flex; gap: 10px; }
+
+.dot {
+  position: relative;
+  z-index: 1;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-3);
+  margin-top: 6px;
+}
+
+.card {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 10px 12px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.fieldName { font-size: 12px; font-weight: 500; color: var(--text-1); }
+.time { font-size: 11px; color: var(--text-3); }
+
+.change {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.oldVal {
+  font-size: 11px;
+  color: var(--red);
+  background: var(--red-bg);
+  padding: 1px 6px;
+  border-radius: var(--r-sm);
+  text-decoration: line-through;
+}
+
+.arrow { color: var(--text-3); }
+
+.newVal {
+  font-size: 11px;
+  color: var(--green);
+  background: var(--green-bg);
+  padding: 1px 6px;
+  border-radius: var(--r-sm);
+}
+
+.by { font-size: 11px; color: var(--text-3); margin-top: 5px; }
+
+.empty { text-align: center; padding: 28px; color: var(--text-3); font-size: 13px; }

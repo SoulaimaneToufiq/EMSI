@@ -1,0 +1,14 @@
+# Frontend
+Project-front-end/node_modules/
+Project-front-end/dist/
+Project-front-end/dist-ssr/
+Project-front-end/*.local
+
+# Backend
+Developpement-d-un-projet/venv/
+Developpement-d-un-projet/__pycache__/
+Developpement-d-un-projet/*.pyc
+Developpement-d-un-projet/.env
+
+# OS
+.DS_Store

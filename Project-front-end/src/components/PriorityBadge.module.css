@@ -1,0 +1,14 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: var(--r-sm);
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.low    { background: var(--slate-bg); color: var(--slate);  }
+.medium { background: var(--yellow-bg); color: var(--yellow); }
+.high   { background: var(--red-bg);   color: var(--red);    }

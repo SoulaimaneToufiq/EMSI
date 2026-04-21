@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 120ms ease;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 160ms ease;
+}
+
+.sm { max-width: 440px; }
+.md { max-width: 540px; }
+.lg { max-width: 680px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px; height: 26px;
+  border-radius: var(--r-sm);
+  background: none;
+  border: none;
+  color: var(--text-3);
+  transition: background var(--t), color var(--t);
+}
+.closeBtn:hover { background: var(--bg); color: var(--text-2); }
+
+.body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 18px;
+}
